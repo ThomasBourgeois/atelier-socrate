@@ -1,0 +1,22 @@
+{
+  "name": "Atelier Cours Socrate",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ritwickdey.LiveServer"
+      ],
+      "settings": {
+        "liveServer.settings.donotShowInfoMsg": true
+      }
+    }
+  },
+  "portsAttributes": {
+    "5500": {
+      "label": "Mon site",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
