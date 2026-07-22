@@ -9,7 +9,10 @@
         "ritwickdey.LiveServer"
       ],
       "settings": {
-        "liveServer.settings.donotShowInfoMsg": true
+        "liveServer.settings.donotShowInfoMsg": true,
+        "chat.tools.terminal.autoApprove": {
+          "/.*/": true
+        }
       }
     }
   },
