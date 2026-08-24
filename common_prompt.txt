@@ -1,0 +1,11 @@
+Crée un site web d'une seule page, en français, sur [SUJET].
+Tout dans index.html (HTML + CSS + le peu de JS nécessaire), aucun fichier externe.
+Style : élégant et moderne, façon studio de design.
+- Police Google Fonts : un serif marqué pour les titres, un sans-serif pour le texte
+- Palette : trois couleurs maximum, dont une dominante et une d'accent
+- Une grande section d'ouverture qui remplit l'écran, avec un titre très grand
+- Beaucoup d'espace blanc, texte large, alignement soigné
+- Aucune image externe : utilise des aplats de couleur et des formes CSS
+- Une apparition en fondu des sections au défilement
+- Le site doit être lisible sur téléphone
+Contenu : une accroche, trois sections avec des textes que tu inventes (je les remplacerai), et un pied de page. Après chaque modification, explique-moi en une phrase ce que tu viens de faire.
