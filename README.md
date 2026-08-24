@@ -44,6 +44,7 @@ Style : élégant et moderne, façon studio de design.
 - Aucune image externe : utilise des aplats de couleur et des formes CSS
 - Une apparition en fondu des sections au défilement
 - Le site doit être lisible sur téléphone
+
 Contenu : une accroche, trois sections avec des textes que tu inventes (je les remplacerai), et un pied de page. Après chaque modification, explique-moi en une phrase ce que tu viens de faire."
 
 
