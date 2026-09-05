@@ -85,7 +85,7 @@ Les rêgles du pilote (4 min).
 
 **Votre environnement de travail — repérez les 4 zones :**
 
-![Capture d'écran de l'environnement de travail](environnement.png)
+![Capture d'écran de l'environnement de travail](images/environnement.png)
 
 Votre écran ressemble à un atelier avec 4 zones distinctes :
 
@@ -118,13 +118,13 @@ Premier réflexe : regarder l'agent travailler, pas seulement le résultat.
 
 2. **Activer l'approbation automatique** — Lorsque l'IA travaille, elle peut avoir besoin d'exécuter des commandes et vous demande alors votre autorisation via un bouton bleu « Autoriser ». Pour ne pas avoir à cliquer à chaque fois, cliquez sur **la petite flèche à côté du bouton « Autoriser »**, puis sur **« Activer l'approbation automatique »**.
 
-   ![Fenêtre d'autorisation avec le bouton Autoriser](autorisation.png)
+   ![Fenêtre d'autorisation avec le bouton Autoriser](images/autorisation.png)
 
 3. **Savoir si l'IA travaille encore** — Regardez le petit bouton en bas à droite de la fenêtre d'entrée de prompt :
    - Un **carré** signifie que l'IA est encore en train de travailler (ou attend votre autorisation, cf. point 2).
-     ![Zone de prompt pendant le travail de l'IA](prompt-travail.png)
+     ![Zone de prompt pendant le travail de l'IA](images/prompt-travail.png)
    - Une **petite flèche** (comme au départ) signifie que l'IA a terminé et attend votre prochain message.
-     ![Zone de prompt au repos avec la flèche](prompt-repos.png)
+     ![Zone de prompt au repos avec la flèche](images/prompt-repos.png)
 
 **Prompt commun** (copie le bloc ci-dessous, copie le dans le chat du Codespace, modifie le "SUJET" à ta guise, puis tape "Entrée") :
 
