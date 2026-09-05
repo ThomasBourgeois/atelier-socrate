@@ -81,12 +81,19 @@ Votre écran ressemble à un atelier avec 4 zones distinctes :
 
 4. **Le panneau de droite — le Chat IA** : c'est ici que vous parlez à l'IA. Vous tapez votre demande dans le champ « Décrivez ce qu'il faut construire » en bas, puis vous appuyez sur Entrée. L'IA va alors modifier vos fichiers et vous expliquer ce qu'elle fait.
 
+Pour cet atelier, on utilise comme "harnais IA" (voir la définition de harnais IA dans la FAQ en bas de ce fichier): _Github Copilot_ en mode "Auto", c'est à dire que Copilot va choisir lui-même quelle IA il va utiliser par rapport à la requête que vous lui faites. Il peut par exemple choisir GPT 5-6 Terra, ou Claude Sonnet 5.
+
+Si vous suivez le cours Cours-Socrate.ai avec nous par la suite, nous utiliserons comme "harnais IA" : _Claude Code_ avec un forfait pro. Ensuite comme IA, nous utiliserons par exemple Claude Opus 4.6 ou Claude Opus 5.
+
 En bas de l'écran, la **barre d'état** affiche des informations utiles : la branche `main`, le type de fichier, et surtout le bouton **« Go Live »** qui sert à afficher votre site dans le navigateur.
 
 **Étape 1 — Vérifiez que tout marche**
 
 1. Dans la colonne de gauche, cliquez sur le fichier **`index.html`**
 2. En bas à droite de l'écran, cliquez sur **« Go Live »**
+
+   ![Bouton Go Live dans la barre d'état](images/golive.png)
+
 3. Un nouvel onglet s'ouvre : vous devez voir la page **« Bonjour, je m'appelle \_\_\_ »**
 
 ✅ Vous voyez la page ? Parfait, vous êtes prêt·e !
@@ -134,7 +141,15 @@ Après chaque modification, explique-moi en une phrase ce que tu viens de faire.
 ### 19h50 — Personnalisation `10 min`
 
 Chacun sur son site : 2–3 demandes à l'IA à partir des prompts d'exemple ci-dessous, puis libre.
+
 À chaque changement, se poser la question : « ce changement, il a touché quel fichier ? ».
+
+Lorsque les fichiers ont été modifiés, allez sur l'onglet de votre page pour voir les modifications (N'oubliez pas de recharger votre page (F5)!)
+
+**Important :** si vous ne voyez plus le bouton **« Go Live »** mais celui-ci à la place ("Port: 5500" par exemple, ou 5501), c'est normal — pas besoin de le chercher, votre site est déjà en ligne ! Vous n'avez pas besoin de le relancer. Allez juste sur l'onglet où vous avez ouvert votre site.
+Si vous avez fermé cet onglet, cliquez sur "Port: 5500" pour le fermer; vous allez à nouveau voir le bouton "Go live"; cliquez sur "Go live".
+
+![Barre d'état montrant Port : 5500](images/port-5500.png)
 
 **Exemples de prompts :**
 
@@ -205,6 +220,36 @@ Présentation du cours : programme du trimestre, 28 septembre, même salle.
 
 Flyer sur table, lien cours-socrate.ai au projecteur, rappel de la prochaine date d'atelier.
 Merci à tous !.
+
+---
+
+### FAQ
+
+**Quelle est la différence entre une IA, un modèle IA et un harnais IA ?**
+
+- **Un modèle IA** (ex. GPT 6-Astra, Claude Fable 5.1, Gemini 3.8 Flash) est le « cerveau » : un programme entraîné sur d'immenses quantités de texte, capable de comprendre et de générer du langage. Il ne sait rien faire d'autre que recevoir du texte et en produire.
+- **Un harnais IA** (ex. GitHub Copilot, Claude Code, Cursor) est l'outil qui entoure le modèle : il lui donne accès à vos fichiers, lui permet d'exécuter des commandes, affiche ses réponses dans une interface, gère les autorisations… C'est le « cockpit » qui rend le modèle utile dans un contexte concret. Un même modèle peut être utilisé par plusieurs harnais différents.
+- **L'IA** est le terme générique qui englobe tout cela. Quand on dit « l'IA a modifié mon fichier », c'est en réalité le harnais qui a demandé au modèle quoi écrire, puis qui a appliqué le changement.
+
+**Analogie** : le modèle, c'est le moteur d'une voiture. Le harnais, c'est la voiture complète (volant, pédales, tableau de bord). « L'IA », c'est quand on dit « la voiture » sans préciser.
+
+**Pourquoi mon site ne s'affiche pas quand je clique sur « Go Live » ?**
+
+Vérifiez que le fichier `index.html` est bien ouvert dans l'éditeur (onglet actif). Si un nouvel onglet s'ouvre mais reste blanc, attendez quelques secondes — le Codespace peut être lent au démarrage.
+
+**Est-ce que l'IA peut tout coder ?**
+
+Elle est très forte pour générer du code standard (une page web, un formulaire, un style CSS). Elle peut se tromper sur des demandes complexes ou ambiguës. C'est pourquoi on apprend à vérifier ce qu'elle produit — c'est tout l'objet du cours !
+
+**Je peux continuer après l'atelier ?**
+
+Oui ! Votre dépôt GitHub reste en ligne avec votre code. Ça c'est à vous, ça ne meurt pas à la fin de l'atelier.
+
+Votre site lui s'éteindra lorsque s'éteindra votre codespace, au bout de 30 minutes d'inactivité.
+
+Vous pouvez rouvrir un Codespace à tout moment depuis votre dépôt, et recliquer sur golive pour le remettre en route.
+
+Et si vous voulez aller plus loin pour avoir un site hébergé qui ne meurt pas au bout de 30 minutes : [cours-socrate.ai](https://cours-socrate.ai).
 
 ---
 
