@@ -56,7 +56,7 @@ Si vous décidez de suivre le cours (cours-socrate.ai) on installera l'éditeur 
 
 ---
 
-### 19h30 — Théorie — démystification `11 min`
+### 19h30 — Théorie — démystification `10 min`
 
 Comment marche un LLM, en français sans maths (7 min).
 Pourquoi « l'IA code » ne veut pas dire « plus besoin de comprendre ».
@@ -64,7 +64,7 @@ Les rêgles du pilote (4 min).
 
 ---
 
-### 19h41 — Le site naît sous vos yeux `10 min`
+### 19h40 — Le site naît sous vos yeux `10 min`
 
 **Votre environnement de travail — repérez les 4 zones :**
 
@@ -130,7 +130,7 @@ Après chaque modification, explique-moi en une phrase ce que tu viens de faire.
 
 ---
 
-### 19h51 — Personnalisation `10 min`
+### 19h50 — Personnalisation `10 min`
 
 Chacun sur son site : 2–3 demandes à l'IA à partir des prompts d'exemple ci-dessous, puis libre.
 À chaque changement, se poser la question : « ce changement, il a touché quel fichier ? ».
@@ -155,11 +155,11 @@ Ajoute une section avec trois cartes côte à côte, qui se réorganisent en col
 
 ---
 
-### 20h01 — Pause `5 min`
+### 20h00 — Pause `5 min`
 
 ---
 
-### 20h06 — Pousser son code sur GitHub `8 min`
+### 20h05 — Pousser son code sur GitHub `9 min`
 
 Demander à l'IA : « pousse mon code sur GitHub ».
 Allez voir sur le site Github.com son code enregistré.
