@@ -54,22 +54,6 @@ Pour cet atelier découverte nous avons décidé de vous faciliter la tâche en 
 
 Si vous décidez de suivre le cours (cours-socrate.ai) on installera l'éditeur de code sur votre machine. Ca restera gratuit, mais ce sera au final beaucoup plus rapide ! Lorsque vous voudrez coder vous aurez juste à ouvrir VSCode !
 
-Vous aurez besoin de ce prompt commun de génération :
-
-"Crée un site web d'une seule page, en français, sur [SUJET].
-Tout dans index.html (HTML + CSS + le peu de JS nécessaire), aucun fichier externe.
-Style : élégant et moderne, façon studio de design.
-
-- Police Google Fonts : un serif marqué pour les titres, un sans-serif pour le texte
-- Palette : trois couleurs maximum, dont une dominante et une d'accent
-- Une grande section d'ouverture qui remplit l'écran, avec un titre très grand
-- Beaucoup d'espace blanc, texte large, alignement soigné
-- Aucune image externe : utilise des aplats de couleur et des formes CSS
-- Une apparition en fondu des sections au défilement
-- Le site doit être lisible sur téléphone
-
-Contenu : une accroche, trois sections avec des textes que tu inventes (je les remplacerai), et un pied de page. Après chaque modification, explique-moi en une phrase ce que tu viens de faire."
-
 ---
 
 ### 19h30 — Théorie — démystification `11 min`
@@ -108,7 +92,7 @@ En bas de l'écran, la **barre d'état** affiche des informations utiles : la br
 
 **Étape 2 — A vous de jouer !**
 
-Le binôme lance le prompt commun (ci-desssous) sur la machine A et lit ensemble ce qui sort — fichiers créés, textes proposés ; échanges dans le binôme : « quels fichiers ont été créés ? ». Puis machine B.
+Le binôme lance le prompt commun (ci-dessous) sur la machine A et lit ensemble ce qui sort — fichiers créés, textes proposés ; échanges dans le binôme : « quels fichiers ont été créés ? ». Puis machine B.
 Premier réflexe : regarder l'agent travailler, pas seulement le résultat.
 
 **Trois petites choses à savoir avant de commencer :**
@@ -118,6 +102,8 @@ Premier réflexe : regarder l'agent travailler, pas seulement le résultat.
 2. **Activer l'approbation automatique** — Lorsque l'IA travaille, elle peut avoir besoin d'exécuter des commandes et vous demande alors votre autorisation via un bouton bleu « Autoriser ». Pour ne pas avoir à cliquer à chaque fois, cliquez sur **la petite flèche à côté du bouton « Autoriser »**, puis sur **« Activer l'approbation automatique »**.
 
    ![Fenêtre d'autorisation avec le bouton Autoriser](images/autorisation.png)
+
+   Si malgré cela l'IA continue de demander votre autorisation, cliquez en bas du chat sur **« Default permissions »** et choisissez **« Bypass Approvals »**.
 
 3. **Savoir si l'IA travaille encore** — Regardez le petit bouton en bas à droite de la fenêtre d'entrée de prompt :
    - Un **carré** signifie que l'IA est encore en train de travailler (ou attend votre autorisation, cf. point 2).
