@@ -15,6 +15,7 @@ Lorsque je m'installe, je m'installe donc à côté d'une personne qui deviendra
 Si nombre impair de participants : 1 trinôme aura lieu.
 
 5 min : présentation Professeur
+
 10 min : Tour de table de la salle : « votre prénom + ce que vous aimeriez mettre sur un site, ce que vous recherchez dans cet évènement ».
 
 **Les 3 règles de l'atelier :**
