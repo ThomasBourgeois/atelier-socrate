@@ -111,6 +111,8 @@ _Trois petites choses à savoir avant de commencer :_
 
 1. **Activer l'approbation automatique** — Lorsque l'IA travaille, elle peut avoir besoin d'exécuter des commandes ordinateur pour lesquelles elle vous demande normalement des autorisations, une à une. C'est vite rébarbatif quand elle va se mettre à passer dix, vingt, trente commanders.Pour activer l'approbation automatique, cliquez en bas du chat sur **« Default permissions »** et choisissez **« Allow all »**.
 
+![Activer approbation automatique](images/allow_all.png)
+
 2. **Accepter l'IA** — La première fois que vous lancez un prompt, une fenêtre peut vous demander si vous acceptez d'utiliser l'IA. Répondez **oui**.
 
 3. **Savoir si l'IA travaille encore** — Regardez le petit bouton en bas à droite de la fenêtre d'entrée de prompt :
@@ -144,7 +146,9 @@ _Ouvrir votre site lorsque l'IA a fini de travailler:_
 
 - A la fin de ce premier prompt, l'IA devrait vous donner quelque chose comme la copie d'écran suivant :
   ![Lancement serveur](images/server_launched.png)
-  C'est tout bon ! Votre site tourne sur le codespace, vous pouvez l'ouvrir en cliquant sur le lien en bleu qu'elle vous a donné localhost:5500
+
+
+C'est tout bon ! Votre site tourne sur le codespace, vous pouvez l'ouvrir en cliquant sur le lien en bleu qu'elle vous a donné localhost:5500
 
 ---
 
