@@ -73,7 +73,7 @@ Les rêgles du pilote (4 min).
 
 Votre écran ressemble à un atelier avec 4 zones distinctes :
 
-1. **La colonne de gauche — l'Explorateur** : c'est le sommaire de votre projet. Vous y voyez vos fichiers : `index.html` (le fichier de votre site), `README.md` (ce que vous lisez en ce moment), et des dossiers comme `.claude` ou `.devcontainer`. Pour ouvrir un fichier, cliquez dessus.
+1. **La colonne de gauche — l'Explorateur** : c'est le sommaire de votre projet. Vous y voyez vos fichiers : `index.html` (une page de test), `README.md` (ce que vous lisez en ce moment), et des dossiers comme `.claude` ou `.devcontainer`. Après le prompt, l'IA créera de nouveaux fichiers et dossiers ici — c'est normal. Pour ouvrir un fichier, cliquez dessus.
 
 2. **La zone centrale — l'Éditeur** : c'est ici que s'affiche le contenu du fichier que vous avez cliqué. En haut, des onglets permettent de passer d'un fichier à l'autre. Vous voyez du code avec des numéros de lignes à gauche et des couleurs différentes — c'est normal, les couleurs aident à lire le code.
 
@@ -85,7 +85,7 @@ Pour cet atelier, on utilise comme "harnais IA" (voir la définition de harnais 
 
 Si vous suivez le cours Cours-Socrate.ai avec nous par la suite, nous utiliserons comme "harnais IA" : _Claude Code_ avec un forfait pro. Ensuite comme IA, nous utiliserons par exemple Claude Opus 4.6 ou Claude Opus 5.
 
-En bas de l'écran, la **barre d'état** affiche des informations utiles : la branche `main`, le type de fichier, et surtout le bouton **« Go Live »** qui sert à afficher votre site dans le navigateur.
+En bas de l'écran, la **barre d'état** affiche des informations utiles : la branche `main`, le type de fichier, et le bouton **« Go Live »** qu'on utilisera juste pour un premier test rapide (voir FAQ pour les détails).
 
 **Étape 1 — Vérifiez que tout marche**
 
@@ -97,6 +97,10 @@ En bas de l'écran, la **barre d'état** affiche des informations utiles : la br
 3. Un nouvel onglet s'ouvre : vous devez voir la page **« Bonjour, je m'appelle \_\_\_ »**
 
 ✅ Vous voyez la page ? Parfait, vous êtes prêt·e !
+
+Refermez-là, et refermez le port 5500 (voir ce qu'est un port dans la FAQ) en revenant sur le codespace et en cliquant sur "Port 5500" ici :
+
+![Barre d'état montrant Port : 5500](images/port-5500.png)
 
 **Étape 2 — A vous de jouer !**
 
@@ -119,39 +123,22 @@ Premier réflexe : regarder l'agent travailler, pas seulement le résultat.
    - Une **petite flèche** (comme au départ) signifie que l'IA a terminé et attend votre prochain message.
      ![Zone de prompt au repos avec la flèche](images/prompt-repos.png)
 
-**Prompt communs** Utilise _une_ des deux méthodes ci-dessous.
+**Prompt commun**
 
-Méthode 1 : Site CV multipages plus évolué, force l'utilisation d'un skill
-
-- enregistre ton profil Linkedin en pdf : sur ta page Linkedin, dans la section introduction, clique sur "Ressources", puis "Save to Pdf"
-- copie le pdf dans ton codespace : fais un glisser-déposer du pdf dans la zone "Explorateur" ci-dessus de ton Codespace.
-- copie le bloc ci-dessous, colle le dans le chat du Codespace, puis tape "Entrée"
--
+- Enregistrez votre profil LinkedIn en PDF : sur votre page LinkedIn, dans la section introduction, cliquez sur « Ressources », puis « Save to PDF ».
+- Copiez le PDF dans votre Codespace : faites un glisser-déposer du PDF dans la zone « Explorateur » (colonne de gauche) de votre Codespace.
+- Copiez le bloc ci-dessous, collez-le dans le chat du Codespace, puis tapez « Entrée ».
 
 ```
-Créé un site web multipages sur moi avec nextjs, react, tailwind. Utilise le skill frontend-design. Utilise les informations Profile.pdf.
+/frontend-design Créé un site web multipages sur moi avec nextjs, react, tailwind.  Utilise les informations Profile.pdf. A la fin, lance le site en mode dev sur localhost:5500 .
 ```
 
-Méthode 2 : Site vitrine d'une page un peu plus basique
+Comprendre votre prompt :
 
-- copie le bloc ci-dessous, colle le dans le chat du Codespace, modifie le "SUJET", puis tape "Entrée"
-
-```
-Crée un site web d'une seule page, en français, sur [SUJET].
-Tout dans index.html (HTML + CSS + le peu de JS nécessaire), aucun fichier externe.
-Style : élégant et moderne, façon studio de design.
-- Police Google Fonts : un serif marqué pour les titres, un sans-serif pour le texte
-- Palette : trois couleurs maximum, dont une dominante et une d'accent
-- Une grande section d'ouverture qui remplit l'écran, avec un titre très grand
-- Beaucoup d'espace blanc, texte large, alignement soigné
-- Aucune image externe : utilise des aplats de couleur et des formes CSS
-- Une apparition en fondu des sections au défilement
-- Le site doit être lisible sur téléphone
-Contenu : une accroche, trois sections avec des textes que tu inventes (je les remplacerai), et un pied de page.
-Après chaque modification, explique-moi en une phrase ce que tu viens de faire.
-```
-
----
+- /frontend-design permet de charger le skill frontend-design (dans le dossier .agents de votre dépot). Ce skill permet d'améliorer la façon dont votre IA va travailler pour effectuer votre site. Allez dans le fichier pour comprendre ce qui est dit à l'IA pour améliorer le site.
+- nextjs, react, tailwind sont des librairies de code (à la pointe en 2026) pour créer tout type de code. Avec ça, vous êtes parfaitement armés pour créer par la suite n'importe quel type de site !
+- localhost:5500 est l'adresse (localhost, votre serveur codespace) et le port (5500, la porte d'entrée) où l'on pourra voir votre site. Voir la FAQ : localhost et port 5500 plus bas.
+- ***
 
 ### 19h50 — Personnalisation `10 min`
 
@@ -161,10 +148,7 @@ Chacun sur son site : 2–3 demandes à l'IA à partir des prompts d'exemple ci-
 
 Lorsque les fichiers ont été modifiés, allez sur l'onglet de votre page pour voir les modifications (N'oubliez pas de recharger votre page (F5)!)
 
-**Important :** si vous ne voyez plus le bouton **« Go Live »** mais celui-ci à la place ("Port: 5500" par exemple, ou 5501), c'est normal — pas besoin de le chercher, votre site est déjà en ligne ! Vous n'avez pas besoin de le relancer. Allez juste sur l'onglet où vous avez ouvert votre site.
-Si vous avez fermé cet onglet, cliquez sur "Port: 5500" pour le fermer; vous allez à nouveau voir le bouton "Go live"; cliquez sur "Go live".
-
-![Barre d'état montrant Port : 5500](images/port-5500.png)
+**Important :** si vous avez fermé l'onglet avec votre site, pour le réouvrir, n'hésitez pas à demander à l'IA: "Si mon site est déjà lancé en mode dev sur localhost:5500, réouvre cette page; sinon lance mon site en mode dev sur localhost:5500".
 
 **Exemples de prompts :**
 
@@ -248,9 +232,28 @@ Merci à tous !.
 
 **Analogie** : le modèle, c'est le moteur d'une voiture. Le harnais, c'est la voiture complète (volant, pédales, tableau de bord). « L'IA », c'est quand on dit « la voiture » sans préciser.
 
-**Pourquoi mon site ne s'affiche pas quand je clique sur « Go Live » ?**
+**C'est quoi `localhost` ?**
 
-Vérifiez que le fichier `index.html` est bien ouvert dans l'éditeur (onglet actif). Si un nouvel onglet s'ouvre mais reste blanc, attendez quelques secondes — le Codespace peut être lent au démarrage.
+Quand vous tapez une adresse comme `google.com` dans votre navigateur, vous demandez à voir un site hébergé sur un ordinateur distant (un _serveur_). `localhost`, c'est l'adresse spéciale qui dit au navigateur : « ne va pas chercher ailleurs, regarde sur **cette machine-ci** ». C'est votre propre ordinateur (ou, dans notre cas, votre Codespace) qui joue le rôle du serveur.
+
+Quand l'IA lance votre site « en mode dev sur localhost », elle démarre un petit serveur directement dans votre Codespace. Le site tourne sur cette machine, pas sur un hébergeur classique — mais comme GitHub Codespaces rend le port accessible via une URL (du type `*.app.github.dev`), vous pouvez quand même y accéder depuis votre navigateur, et même partager ce lien temporairement. Ce n'est pas un « vrai » hébergement : dès que le Codespace s'éteint (après 30 min d'inactivité), le site disparaît.
+
+**C'est quoi un port (le `:5500` dans `localhost:5500`) ?**
+
+Imaginez un immeuble : `localhost` est l'adresse de l'immeuble, et le **port** est le numéro de l'appartement. Un même ordinateur peut faire tourner plusieurs services en même temps (un site web, un serveur de base de données, etc.), et chacun écoute sur un port différent pour ne pas se mélanger.
+
+Dans notre atelier, on utilise le port **5500**. C'est pour cela que l'adresse complète est `localhost:5500` : « sur cette machine, appartement 5500 ».
+
+**C'est quoi le bouton « Go Live » ?**
+
+« Go Live » est un bouton fourni par l'extension _Live Server_ de VSCode. Il démarre un mini-serveur qui **affiche des fichiers HTML statiques** dans le navigateur. On l'utilise uniquement au début de l'atelier pour vérifier que le Codespace fonctionne (étape 1, avec le fichier `index.html` du modèle).
+
+Une fois que l'IA a créé votre vrai site (un projet Next.js / React), « Go Live » ne sert plus à rien — c'est le **serveur de développement** de Next.js (lancé automatiquement par l'IA via la commande `npm run dev` dans le terminal) qui prend le relais. Le résultat est le même pour vous : un onglet s'ouvre avec votre site sur `localhost:5500`.
+
+**Mon site ne s'affiche pas, que faire ?**
+
+- **Au test initial (étape 1 de 19h40)** : vérifiez que le fichier `index.html` est bien ouvert dans l'éditeur (onglet actif) avant de cliquer sur « Go Live ». Si un nouvel onglet s'ouvre mais reste blanc, attendez quelques secondes.
+- **Après le prompt (votre vrai site Next.js)** : demander à l'IA: "Si mon site est déjà lancé en mode dev sur localhost:5500, réouvre cette page; sinon lance mon site en mode dev sur localhost:5500"
 
 **Est-ce que l'IA peut tout coder ?**
 
@@ -262,7 +265,7 @@ Oui ! Votre dépôt GitHub reste en ligne avec votre code. Ça c'est à vous, ç
 
 Votre site lui s'éteindra lorsque s'éteindra votre codespace, au bout de 30 minutes d'inactivité.
 
-Vous pouvez rouvrir un Codespace à tout moment depuis votre dépôt, et recliquer sur golive pour le remettre en route.
+Vous pouvez rouvrir un Codespace à tout moment depuis votre dépôt, et demander à l'IA de relancer votre site ("lance mon site en mode dev sur localhost:5500")
 
 Et si vous voulez aller plus loin pour avoir un site hébergé qui ne meurt pas au bout de 30 minutes : [cours-socrate.ai](https://cours-socrate.ai).
 
