@@ -107,15 +107,11 @@ Refermez-là, et refermez le port 5500 (voir ce qu'est un port dans la FAQ) en r
 Le binôme lance le prompt commun (ci-dessous) sur la machine A et lit ensemble ce qui sort — fichiers créés, textes proposés ; échanges dans le binôme : « quels fichiers ont été créés ? ». Puis machine B.
 Premier réflexe : regarder l'agent travailler, pas seulement le résultat.
 
-**Trois petites choses à savoir avant de commencer :**
+_Trois petites choses à savoir avant de commencer :_
 
-1. **Accepter l'IA** — La première fois que vous lancez un prompt, une fenêtre peut vous demander si vous acceptez d'utiliser l'IA. Répondez **oui**.
+1. **Activer l'approbation automatique** — Lorsque l'IA travaille, elle peut avoir besoin d'exécuter des commandes ordinateur pour lesquelles elle vous demande normalement des autorisations, une à une. C'est vite rébarbatif quand elle va se mettre à passer dix, vingt, trente commanders.Pour activer l'approbation automatique, cliquez en bas du chat sur **« Default permissions »** et choisissez **« Allow all »**.
 
-2. **Activer l'approbation automatique** — Lorsque l'IA travaille, elle peut avoir besoin d'exécuter des commandes et vous demande alors votre autorisation via un bouton bleu « Autoriser ». Pour ne pas avoir à cliquer à chaque fois, cliquez sur **la petite flèche à côté du bouton « Autoriser »**, puis sur **« Activer l'approbation automatique »**.
-
-   ![Fenêtre d'autorisation avec le bouton Autoriser](images/autorisation.png)
-
-   Si malgré cela l'IA continue de demander votre autorisation, cliquez en bas du chat sur **« Default permissions »** et choisissez **« Bypass Approvals »**.
+2. **Accepter l'IA** — La première fois que vous lancez un prompt, une fenêtre peut vous demander si vous acceptez d'utiliser l'IA. Répondez **oui**.
 
 3. **Savoir si l'IA travaille encore** — Regardez le petit bouton en bas à droite de la fenêtre d'entrée de prompt :
    - Un **carré** signifie que l'IA est encore en train de travailler (ou attend votre autorisation, cf. point 2).
@@ -123,7 +119,12 @@ Premier réflexe : regarder l'agent travailler, pas seulement le résultat.
    - Une **petite flèche** (comme au départ) signifie que l'IA a terminé et attend votre prochain message.
      ![Zone de prompt au repos avec la flèche](images/prompt-repos.png)
 
-**Prompt commun**
+4. **Ne plus afficher Avertissement "Le dépôt Git ..."** -
+   Environ vers la fin du travail de Copilot, le codespace, voyant que beaucoup de fichiers ont changé, va vous demander ce que vous voulez en faire d'un point de vue de Git. Il est trop rapide, nous voyons ce point un peu plus tard dans l'atelier. Pour le moment, ignorez cet avertissement en cliquand sur "Ne plus afficher".
+
+![Fenêtre d'avertissement Git](images/ignore_git.png)
+
+_Prompt commun_
 
 - Enregistrez votre profil LinkedIn en PDF : sur votre page LinkedIn, dans la section introduction, cliquez sur « Ressources », puis « Save to PDF ».
 - Copiez le PDF dans votre Codespace : faites un glisser-déposer du PDF dans la zone « Explorateur » (colonne de gauche) de votre Codespace.
@@ -133,11 +134,17 @@ Premier réflexe : regarder l'agent travailler, pas seulement le résultat.
 /frontend-design Créé un site web multipages sur moi avec nextjs, react, tailwind.  Utilise les informations Profile.pdf. A la fin, lance le site en mode dev sur localhost:5500 .
 ```
 
-Comprendre votre prompt :
+_Comprendre votre prompt :_
 
 - /frontend-design permet de charger le skill frontend-design (dans le dossier .agents de votre dépot). Ce skill permet d'améliorer la façon dont votre IA va travailler pour effectuer votre site. Allez dans le fichier pour comprendre ce qui est dit à l'IA pour améliorer le site.
 - nextjs, react, tailwind sont des librairies de code (à la pointe en 2026) pour créer tout type de code. Avec ça, vous êtes parfaitement armés pour créer par la suite n'importe quel type de site !
 - localhost:5500 est l'adresse (localhost, votre serveur codespace) et le port (5500, la porte d'entrée) où l'on pourra voir votre site. Voir la FAQ : localhost et port 5500 plus bas.
+
+_Ouvrir votre site lorsque l'IA a fini de travailler:_
+
+- A la fin de ce premier prompt, l'IA devrait vous donner quelque chose comme la copie d'écran suivant :
+  ![Lancement serveur](images/server_launched.png)
+  C'est tout bon ! Votre site tourne sur le codespace, vous pouvez l'ouvrir en cliquant sur le lien en bleu qu'elle vous a donné localhost:5500
 
 ---
 
