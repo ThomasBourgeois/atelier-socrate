@@ -263,6 +263,16 @@ Une fois que l'IA a créé votre vrai site (un projet Next.js / React), « Go Li
 - **Au test initial (étape 1 de 19h40)** : vérifiez que le fichier `index.html` est bien ouvert dans l'éditeur (onglet actif) avant de cliquer sur « Go Live ». Si un nouvel onglet s'ouvre mais reste blanc, attendez quelques secondes.
 - **Après le prompt (votre vrai site Next.js)** : demander à l'IA: "Si mon site est déjà lancé en mode dev sur localhost:5500, réouvre cette page; sinon lance mon site en mode dev sur localhost:5500"
 
+**C'est quoi Git et GitHub ?**
+
+**Git** est un outil qui enregistre l'historique de vos fichiers, un peu comme un « Ctrl+Z géant » pour tout un projet. Chaque fois que vous faites une sauvegarde (on appelle ça un _commit_), Git prend une photo de l'état de tous vos fichiers à cet instant. Si quelque chose casse, vous pouvez revenir à n'importe quelle photo précédente.
+
+**GitHub** est un site web qui héberge vos projets Git en ligne. C'est comme un Google Drive pour le code : votre travail est stocké sur Internet, vous pouvez y accéder depuis n'importe quel ordinateur, et vous pouvez le partager avec d'autres.
+
+Dans l'atelier, quand on « pousse le code sur GitHub », on envoie nos photos (commits) locales vers GitHub pour les mettre en sécurité. C'est grâce à ça que l'IA peut récupérer votre code si vous cassez quelque chose — elle va chercher la dernière version sauvegardée sur GitHub.
+
+**Le message « Le dépôt Git… » qui apparaît** : quand l'IA crée beaucoup de fichiers d'un coup, le Codespace détecte les changements et vous propose de les gérer avec Git. On s'en occupe plus tard dans l'atelier — pour l'instant, cliquez sur « Ne plus afficher ».
+
 **Est-ce que l'IA peut tout coder ?**
 
 Elle est très forte pour générer du code standard (une page web, un formulaire, un style CSS). Elle peut se tromper sur des demandes complexes ou ambiguës. C'est pourquoi on apprend à vérifier ce qu'elle produit — c'est tout l'objet du cours !
