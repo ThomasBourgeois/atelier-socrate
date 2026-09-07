@@ -119,7 +119,22 @@ Premier réflexe : regarder l'agent travailler, pas seulement le résultat.
    - Une **petite flèche** (comme au départ) signifie que l'IA a terminé et attend votre prochain message.
      ![Zone de prompt au repos avec la flèche](images/prompt-repos.png)
 
-**Prompt commun** (copie le bloc ci-dessous, copie le dans le chat du Codespace, modifie le "SUJET" à ta guise, puis tape "Entrée") :
+**Prompt communs** Utilise _une_ des deux méthodes ci-dessous.
+
+Méthode 1 : Site CV multipages plus évolué, force l'utilisation d'un skill
+
+- enregistre ton profil Linkedin en pdf : sur ta page Linkedin, dans la section introduction, clique sur "Ressources", puis "Save to Pdf"
+- copie le pdf dans ton codespace : fais un glisser-déposer du pdf dans la zone "Explorateur" ci-dessus de ton Codespace.
+- copie le bloc ci-dessous, colle le dans le chat du Codespace, puis tape "Entrée"
+-
+
+```
+Créé un site web multipages sur moi avec nextjs, react, tailwind. Utilise le skill frontend-design. Utilise les informations Profile.pdf.
+```
+
+Méthode 2 : Site vitrine d'une page un peu plus basique
+
+- copie le bloc ci-dessous, colle le dans le chat du Codespace, modifie le "SUJET", puis tape "Entrée"
 
 ```
 Crée un site web d'une seule page, en français, sur [SUJET].
