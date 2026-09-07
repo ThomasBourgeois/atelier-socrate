@@ -138,7 +138,8 @@ Comprendre votre prompt :
 - /frontend-design permet de charger le skill frontend-design (dans le dossier .agents de votre dépot). Ce skill permet d'améliorer la façon dont votre IA va travailler pour effectuer votre site. Allez dans le fichier pour comprendre ce qui est dit à l'IA pour améliorer le site.
 - nextjs, react, tailwind sont des librairies de code (à la pointe en 2026) pour créer tout type de code. Avec ça, vous êtes parfaitement armés pour créer par la suite n'importe quel type de site !
 - localhost:5500 est l'adresse (localhost, votre serveur codespace) et le port (5500, la porte d'entrée) où l'on pourra voir votre site. Voir la FAQ : localhost et port 5500 plus bas.
-- ***
+
+---
 
 ### 19h50 — Personnalisation `10 min`
 
